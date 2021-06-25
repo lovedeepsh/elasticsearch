@@ -1,0 +1,10 @@
+---
+# tasks file for Telegraf
+- name: Installing Telegraph for Centos
+  include: RHEL.yml
+  when: ansible_os_family == "Centos7"
+
+- name: Installing Telegraph for Debian
+  include: Debian.yml
+  when: ansible_os_family == "Debian"
+...

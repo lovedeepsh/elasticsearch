@@ -1,0 +1,22 @@
+---
+- name: Downloading Telegraf package
+  get_url:
+    url: "{{ rhel_url }}"
+    dest: /opt
+
+- name: Installing Telegraf
+  yum:
+    name: "{{ rhel_version }}"
+    state: present
+
+- name: Starting the Telegraf service
+  service:
+    name: telegraf
+    state: started
+
+- name: Enabling the Telegraf service
+  service:
+    name: telegraf
+    state: enabled
+...
+

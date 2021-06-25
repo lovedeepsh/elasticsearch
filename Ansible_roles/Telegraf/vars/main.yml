@@ -1,0 +1,7 @@
+---
+# vars file for Telegraf
+rhel_url: https://dl.influxdata.com/telegraf/releases/telegraf-1.3.5-1.x86_64.rpm
+rhel_version: /opt/telegraf-1.3.5-1.x86_64.rpm
+
+debian_url:
+debian_version:
